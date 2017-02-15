@@ -9,15 +9,6 @@
 //===== Typography =====//
 //======================//
 
-code.il{
-    padding:$spacing-xxs $spacing-xs;
-    border:1px solid $light-gray;
-    background-color:$lightest-gray;
-    border-radius:3px;
-    box-sizing: border-box;
-    color:$code;
-}
-
 body{
     font-family: $primary-font;
     color: $darkest-gray;
@@ -63,4 +54,13 @@ p{
 small{
     font-size:$fs-s;
     line-height:$lh-xs !important;
+}
+
+code.il{
+    padding:$spacing-xxs $spacing-xs;
+    border:1px solid $light-gray;
+    background-color:$lightest-gray;
+    border-radius:3px;
+    box-sizing: border-box;
+    color:$code;
 }

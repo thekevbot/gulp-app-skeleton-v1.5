@@ -7,6 +7,7 @@
 <meta name="description" content="">
 
 <!-- build:css css/main.min.css -->
+<!-- NOTE: This points to the main CSS output-->
 <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
 <!-- endbuild -->
 

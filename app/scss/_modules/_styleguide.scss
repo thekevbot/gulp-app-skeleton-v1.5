@@ -1,18 +1,21 @@
+$sidebarWidth: 260px;
+
 .lsg{
-    padding: 0 0 0 352px;
+    position:relative;
     background-color:$white;
 }
 
 .lsg__sidebar{
-    width:304px;
+    width:$sidebarWidth;
     height:100%;
     border-right:1px solid $light-gray;
     position:fixed;
     top:0;
     left:0;
+    overflow-y: auto;
     background-color:$white;
     .lsg__sidebar-head{
-        height:304px;
+        height:$sidebarWidth;
         border-bottom:1px solid $light-gray;
     }
     .lsg__logo{
@@ -21,7 +24,7 @@
             display:none;
         }
         img{
-            width:200px;
+            width:60%;
             display:block;
             margin:0 auto 10px auto;
         }
@@ -39,7 +42,7 @@
         .lsg__menu-item{
             border-bottom:1px solid $light-gray;
             position:relative;
-            font-size:22px;
+            font-size:18px;
             &:hover{
                 cursor:pointer;
             }
@@ -66,6 +69,9 @@
                     &:last-child{
                         padding-bottom:10px;
                     }
+                    a{
+                        text-color:$dark-gray !important;
+                    }
                 }
             }
             &.--open{
@@ -83,8 +89,12 @@
 }
 
 .lsg__content{
+    width:calc(100vw - #{$sidebarWidth});
     max-width:960px;
-    padding:80px;
+    padding:60px 80px;
+    box-sizing: border-box;
+    position:absolute;
+    left:$sidebarWidth;
 }
 
 // Colors

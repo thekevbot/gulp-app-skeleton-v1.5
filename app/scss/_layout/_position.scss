@@ -1,4 +1,8 @@
-//----- Centering -----//
+//=====================//
+//===== Alignment =====//
+//=====================//
+
+//=== Centering
 .center{
     position:relative;
     &.center--v{
@@ -11,6 +15,7 @@
     }
 }
 
+//=== Vertical Alignment
 .valign--top {
     vertical-align:top !important;
 }
@@ -21,6 +26,7 @@
     vertical-align:bottom !important;
 }
 
+//=== Horizontal Alignment (Text)
 .align--left{
     text-align:left !important;
 }
@@ -31,6 +37,7 @@
     text-align:center !important;
 }
 
+//=== Float Overrides
 .float--left {
     float: left !important;
 }

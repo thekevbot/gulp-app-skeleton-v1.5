@@ -1,5 +1,8 @@
-//----- Padding ----- //
+//===================//
+//===== Padding =====//
+//===================//
 
+//=== Overall Padding
 .padding--xxs{
     padding: $spacing-xxs;
 }
@@ -25,7 +28,7 @@
     padding: $spacing-xxxl;
 }
 
-//No Padding
+//=== Remove Padding
 .no--pad{
     padding:0 !important;
 }
@@ -50,8 +53,12 @@
     padding-bottom: 0 !important;
 }
 
-//----- Margins -----//
 
+//===================//
+//===== Margins =====//
+//===================//
+
+//=== Overall Margins
 .margin--xxs{
     margin: $spacing-xxs;
 }
@@ -71,7 +78,7 @@
     margin: $spacing-xl;
 }
 
-//No Margins
+//=== Remove Margins
 .no--margin{
     margin:0 !important;
 }
@@ -96,7 +103,12 @@
     margin-bottom: 0 !important;
 }
 
-//----- Pull Up -----//
+
+//=================//
+//===== Pulls =====//
+//=================//
+
+//=== Pull Up
 .pull--up-xxs{transform:translateY(-$spacing-xxs);}
 .pull--up-xs{transform:translateY(-$spacing-xs);}
 .pull--up-s{transform:translateY(-$spacing-s);}
@@ -104,7 +116,7 @@
 .pull--up-l{transform:translateY(-$spacing-l);}
 .pull--up-xl{transform:translateY(-$spacing-xl);}
 
-//----- Pull Down -----//
+//=== Pull Down
 .pull--down-xxs{transform:translateY($spacing-xxs);}
 .pull--down-xs{transform:translateY($spacing-xs);}
 .pull--down-s{transform:translateY($spacing-s);}
