@@ -1,0 +1,66 @@
+//======================//
+//===== Font Setup =====//
+//======================//
+
+// Place font-face here if necessary.
+
+
+//======================//
+//===== Typography =====//
+//======================//
+
+code.il{
+    padding:$spacing-xxs $spacing-xs;
+    border:1px solid $light-gray;
+    background-color:$lightest-gray;
+    border-radius:3px;
+    box-sizing: border-box;
+    color:$code;
+}
+
+body{
+    font-family: $primary-font;
+    color: $darkest-gray;
+}
+
+h1{
+    font-size:$fs-xxl;
+    line-height:$lh-xxl;
+    font-weight:normal;
+    margin-bottom:24px;
+}
+
+h2{
+    font-size:$fs-xl;
+    line-height:$lh-xl;
+    font-weight:normal;
+    margin-bottom:16px;
+}
+
+h3{
+    font-size:$fs-l;
+    line-height:$lh-l;
+    font-weight:normal;
+    margin-bottom:16px;
+}
+
+h4{
+    font-size:$fs-m;
+    line-height:$lh-m;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+p{
+    font-size:$fs-m;
+    line-height:$lh-m;
+    margin-bottom:16px;
+    code.il{
+        font-size:$fs-xs;
+    }
+}
+
+small{
+    font-size:$fs-s;
+    line-height:$lh-xs !important;
+}

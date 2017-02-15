@@ -1,0 +1,33 @@
+// Unordered Lists
+
+.list{
+    .item{
+        position:relative;
+    }
+    &.list--bulleted{
+        list-style: disc;
+    }
+    &.list--truncated{
+        .item{
+            white-space: nowrap;
+        }
+    }
+    &.list--inline{
+        li{
+            display:inline-block;
+            vertical-align: middle;
+        }
+    }
+    &.list--divided{
+        li.item{
+            margin-right:$spacing-s;
+            padding-right:$spacing-s;
+            border-right:1px solid $black-10;
+            &:last-child{
+                margin-right:0;
+                padding-right:0;
+                border-right:none;
+            }
+        }
+    }
+}

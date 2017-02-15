@@ -1,0 +1,68 @@
+.well{
+    $well-padding: $spacing-m;
+    border:1px solid $light-gray;
+    border-radius:3px;
+    box-sizing: border-box;
+    padding: $well-padding;
+    overflow-x: auto;
+    &.well--sectioned{
+        padding:0;
+        .well__row{
+            .well__section{
+                display:block;
+                overflow:auto;
+            }
+        }
+    }
+    .well__section{
+        padding: $well-padding;
+        border-bottom:1px solid $light-gray;
+        &:last-child{
+            border-bottom:none;
+        }
+    }
+    .well__row{
+        width:100%;
+        display:table;
+        border-bottom:1px solid $light-gray;
+        &:last-child{
+            border-bottom:none;
+        }
+        .well__section{
+            display:table-cell;
+            border-bottom:none;
+            border-right:1px solid $light-gray;
+            &:last-child{
+                border:none;
+            }
+            &.is-halved{
+                width:50%;
+            }
+            &.is-thirds{
+                width:33.333333%;
+            }
+            &.is-quartered{
+                width:25%;
+            }
+        }
+        .well--code{
+            padding:0;
+            code{
+                border-top:1px solid $light-gray;
+                padding:$spacing-s !important;
+                background-color:$lightest-gray;
+            }
+        }
+    }
+    .list{
+        &:last-child{
+            margin:0;
+        }
+    }
+    &.well--dark{
+        border-color:$black-60;
+        .well__section{
+            border-color:$white-20;
+        }
+    }
+}
