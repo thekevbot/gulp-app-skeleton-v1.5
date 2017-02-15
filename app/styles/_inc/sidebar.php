@@ -3,7 +3,7 @@
     <!-- Header -->
     <div class="lsg__sidebar-head">
         <a class="lsg__logo lsg_logo-main center center--h center--v" href="/styles">
-            <img src="<?php echo ROOT_PATH . 'styles/_assets/blend_logo.jpg'; ?>" alt="Logo"/>
+            <img src="<?php echo ROOT_PATH . 'styles/_assets/logo.svg'; ?>" alt="Logo"/>
             <span class="lsg__title">Living Style Guide</span>
         </a>
     </div>
@@ -14,7 +14,7 @@
 
         <!-- Design -->
         <li class="lsg__menu-item">
-            <div class="padding--m">
+            <div class="padding--s">
                 Design
             </div>
             <ul class="lsg__submenu">
@@ -33,7 +33,7 @@
 
         <!-- Elements -->
         <li class="lsg__menu-item">
-            <div class="padding--m">
+            <div class="padding--s">
                 Elements
             </div>
             <ul class="lsg__submenu">
@@ -46,7 +46,7 @@
 
         <!-- Components -->
         <li class="lsg__menu-item">
-            <div class="padding--m">
+            <div class="padding--s">
                 Components
             </div>
             <ul class="lsg__submenu">
@@ -59,7 +59,7 @@
 
         <!-- Utility -->
         <li class="lsg__menu-item">
-            <div class="padding--m">
+            <div class="padding--s">
                 Utility
             </div>
             <ul class="lsg__submenu">

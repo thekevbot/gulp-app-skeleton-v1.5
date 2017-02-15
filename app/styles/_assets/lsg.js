@@ -8,9 +8,10 @@ var color = '';
 $('.lsg__color').click(function() {
     var x = $(this).css('backgroundColor');
     hexc(x);
-    alert(color);
+    alert('Copied!');
 })
 
+//Convert RGB color to HEX and copy to clipboard
 function hexc(colorval) {
     var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
     delete(parts[0]);
@@ -19,6 +20,13 @@ function hexc(colorval) {
         if (parts[i].length == 1) parts[i] = '0' + parts[i];
     }
     color = '#' + parts.join('');
+    
+    //Copy hex to clipboard
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(color).select();
+    document.execCommand("copy");
+    $temp.remove();
 }
 
 $('.lsg__color').each(function(){

@@ -29,12 +29,12 @@ gulp.task('sass', function(){
 });
 
 gulp.task('php', function() {
-    php.server({base: 'app', port: 8020});
+    php.server({base: 'app', port: 8035});
 })
 
 gulp.task('browserSync',['php'], function(){
     browserSync.init({
-        proxy: '127.0.0.1:8020',
+        proxy: '127.0.0.1:8035',
         port: 8080,
         open: true,
         notify: false
@@ -45,7 +45,7 @@ gulp.task('watch', ['sass', 'browserSync'], function(){
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html', browserSync.reload);
     gulp.watch('app/**/*.php', browserSync.reload);
-    gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/**/*.js', browserSync.reload);
 });
 
 gulp.task('default', function(callback){
