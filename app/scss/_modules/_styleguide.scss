@@ -20,17 +20,17 @@ $sidebarWidth: 260px;
     }
     .lsg__logo{
         display:block;
+        text-decoration: none;
         &::after{
             display:none;
         }
         img{
-            width:60%;
+            width:60px;
             display:block;
             margin:0 auto 10px auto;
         }
         .lsg__title{
-            font-size:16px;
-            text-decoration: none;
+            font-size:14px;
             color:$darkest-gray;
         }
     }
@@ -70,7 +70,7 @@ $sidebarWidth: 260px;
                         padding-bottom:10px;
                     }
                     a{
-                        text-color:$dark-gray !important;
+                        color:$darkest-gray;
                     }
                 }
             }

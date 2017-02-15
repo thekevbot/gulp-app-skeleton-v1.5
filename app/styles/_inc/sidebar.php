@@ -2,30 +2,15 @@
 
     <!-- Header -->
     <div class="lsg__sidebar-head">
-        <a class="lsg__logo lsg_logo-main center center--h center--v" href="#">
-            <img src="styles/assets/logo.svg" alt="Logo"/>
+        <a class="lsg__logo lsg_logo-main center center--h center--v" href="/styles">
+            <img src="<?php echo ROOT_PATH . 'styles/_assets/blend_logo.jpg'; ?>" alt="Logo"/>
+            <span class="lsg__title">Living Style Guide</span>
         </a>
     </div>
     <!-- /Header -->
 
     <!-- Navigation -->
     <ul class="lsg__menu">
-
-        <!-- Overview -->
-        <li class="lsg__menu-item">
-            <div class="padding--m">
-                Overview
-            </div>
-            <ul class="lsg__submenu">
-                <li class="lsg__submenu-item">
-                    <a href="index.php">Introduction</a>
-                </li>
-                <li class="lsg__submenu-item">
-                    <a href="guidelines.php">Code Guidelines</a>
-                </li>
-            </ul>
-        </li>
-        <!-- /Overview -->
 
         <!-- Design -->
         <li class="lsg__menu-item">
@@ -34,16 +19,13 @@
             </div>
             <ul class="lsg__submenu">
                 <li class="lsg__submenu-item">
-                    <a href="design/color.php">Color</a>
+                    <a href="/styles/design/color">Color</a>
                 </li>
                 <li class="lsg__submenu-item">
-                    <a href="design/typography.php">Typography</a>
+                    <a href="/styles/design/typography">Typography</a>
                 </li>
                 <li class="lsg__submenu-item">
-                    <a href="design/layout.php">Layout</a>
-                </li>
-                <li class="lsg__submenu-item">
-                    <a href="design/icons.php">Icons</a>
+                    <a href="/styles/design/layout">Layout</a>
                 </li>
             </ul>
         </li>
@@ -56,7 +38,7 @@
             </div>
             <ul class="lsg__submenu">
                 <li class="lsg__submenu-item">
-                    <a href="elements/category.php">Category</a>
+                    <a href="/styles/elements/category">Category</a>
                 </li>
             </ul>
         </li>
@@ -69,7 +51,7 @@
             </div>
             <ul class="lsg__submenu">
                 <li class="lsg__submenu-item">
-                    <a href="components/category.php">Category</a>
+                    <a href="/styles/components/category">Category</a>
                 </li>
             </ul>
         </li>
@@ -82,7 +64,7 @@
             </div>
             <ul class="lsg__submenu">
                 <li class="lsg__submenu-item">
-                    <a href="utility/category.php">Category</a>
+                    <a href="/styles/utility/category">Category</a>
                 </li>
             </ul>
         </li>

@@ -1,10 +1,10 @@
-<?php require_once('inc/header.php'); ?>
-<?php require_once('inc/sidebar.php'); ?>
+<?php require_once('_inc/header.php'); ?>
+<?php require_once('_inc/sidebar.php'); ?>
 
-<section class="lsg__content">
+<section class="lsg__content" id="contentArea">
 
-    <!-- This is where components are loaded -->
-    
+    <h1>Introduction</h1>
+
 </section>
 
-<?php require_once('inc/footer.php'); ?>
+<?php require_once('_inc/footer.php'); ?>

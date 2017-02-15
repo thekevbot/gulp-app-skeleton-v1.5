@@ -4,16 +4,6 @@ $('.lsg__menu-item').click(function(){
     $(this).addClass('--open');
 });
 
-// $('.lsg__submenu-item a').click(function(e){
-//     e.preventDefault();
-//     var page = $(this).attr('href'),
-//     location = '../styles/library/' + page + '.php';
-//     $('#contentArea').load(location, function(){
-//         hljs.initHighlighting.called = false;
-//         hljs.initHighlighting();
-//     })
-// })
-
 var color = '';
 $('.lsg__color').click(function() {
     var x = $(this).css('backgroundColor');
