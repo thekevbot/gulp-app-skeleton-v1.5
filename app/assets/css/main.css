@@ -564,6 +564,30 @@ code.il {
       text-transform: uppercase; }
     .lsg__color-group .lsg__color.bg--white {
       border: 1px solid #E7EAF1; }
+    .lsg__color-group .lsg__color::before {
+      content: 'Click to Copy';
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding: 28px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #FFFFFF;
+      font-weight: bold;
+      text-align: center;
+      opacity: 0;
+      box-sizing: border-box;
+      background-color: rgba(34, 51, 70, 0.8);
+      -webkit-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+    .lsg__color-group .lsg__color:hover::before {
+      opacity: 1;
+      cursor: pointer; }
+    .lsg__color-group .lsg__color:first-child::before {
+      border-radius: 5px 5px 0 0; }
+    .lsg__color-group .lsg__color:last-child::before {
+      border-radius: 0 0 5px 5px; }
   .lsg__color-group:last-child {
     margin-right: 0; }
 
