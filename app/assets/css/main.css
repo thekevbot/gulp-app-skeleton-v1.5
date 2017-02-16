@@ -526,6 +526,8 @@ code.il {
             transition: all 0.1s ease-in-out; }
             .lsg__sidebar .lsg__menu .lsg__menu-item .lsg__submenu .lsg__submenu-item a:hover {
               color: #2893FF; }
+            .lsg__sidebar .lsg__menu .lsg__menu-item .lsg__submenu .lsg__submenu-item a.active {
+              color: #2893FF; }
       .lsg__sidebar .lsg__menu .lsg__menu-item.--open {
         padding-bottom: 0; }
         .lsg__sidebar .lsg__menu .lsg__menu-item.--open::after {

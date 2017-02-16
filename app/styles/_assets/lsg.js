@@ -4,6 +4,17 @@ $('.lsg__menu-item').click(function(){
     $(this).addClass('--open');
 });
 
+// Add active class to nav
+$(function(){
+    var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+    $('.lsg__submenu-item a').each(function() {
+        if (this.href === path) {
+            $(this).addClass('active');
+            $(this).closest('.lsg__menu-item').addClass('--open');
+        }
+    });
+});
+
 var color = '';
 $('.lsg__color').click(function() {
     var x = $(this).css('backgroundColor');
@@ -20,7 +31,7 @@ function hexc(colorval) {
         if (parts[i].length == 1) parts[i] = '0' + parts[i];
     }
     color = '#' + parts.join('');
-    
+
     //Copy hex to clipboard
     var $temp = $("<input>");
     $("body").append($temp);
